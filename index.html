@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Main container -->
+    <div class="main__container" id="main__container">
+      <!-- star icon container -->
+      <div class="star__icon__container">
+        <img src="images/icon-star.svg">
+      </div>
+      <div class="text__one">
+        <h1>How did we do?</h1>
+      </div>
+      <div class="text__two">
+        <p>
+           Please let us know how we did with your support request. All feedback is appreciated 
+           to help us improve our offering!
+        </p>
+      </div>
+      <!-- Rating state start -->
+      <div class="rating__container" aria-required="No rating selected">
+        <label for="rate-1">1</label>
+        <input type="radio" id="rate-1" name="rating" value="1">
+        <label for="rate-2">2</label>
+        <input type="radio" id="rate-2" name="rating" value="2">
+        <label for="rate-3">3</label>
+        <input type="radio" id="rate-3" name="rating" value="3">
+        <label for="rate-4">4</label>
+        <input type="radio" id="rate-4" name="rating" value="4">
+        <label for="rate-5">5</label>
+        <input type="radio" id="rate-5" name="rating" value="5">
+      </div>
+      <!-- Rating state end -->
+      <!-- Submit button start -->
+      <button id="submitBtn"><h4>Submit</h4></button>
+      <!-- Submit button end -->
+    </div>
+
+    <!-- Thankyouustate -->
+    <div class="thankyoustate__page__main__container" id="thankyoustate">
+      <!-- Thank you state start -->
+      <div class="thankyouimg__container">
+          <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <!-- You selected Add rating here out of 5 -->
+      <div class="selected__numbers__container">
+          <label id="myLabel"></label>
+      </div>
+      <!-- Thank you! -->
+      <div class="thankyou__container">
+          <h1>Thank you!</h1>
+          <p>
+              We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!
+          </p>
+      </div>
+     
+
+      <!-- Thank you state end -->
+  </div>
+
+
+    <!-- Footer -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/shamsky777">Nika Shamatava</a>.
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

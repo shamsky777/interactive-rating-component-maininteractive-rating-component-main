@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --damwirda: hsl(213, 12%, 34%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--VeryDarkBlue);
+}
+
+main {
+    position: relative;
+    width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.main__container {
+    position: relative;
+    
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    top: 250px;
+    border-radius: 24px;
+    background-color: hsl(215, 23%, 14%)
+}
+
+.star__icon__container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    top: 20px;
+    left: 20px;
+    background-color: hsl(213, 19%, 18%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__one {
+    position: relative;
+    width: 100%;
+    left: 20px;
+    top: 50px;
+    color: var(--White);
+}
+
+.text__two {
+    position: relative;
+    width: 100%;
+    left: 20px;
+    top: 70px;
+    color: var(--LightGrey);
+}
+
+.rating__container {
+    position: relative;
+    top: 100px;
+    height: 50px;
+    display: flex;
+}
+
+.rating__container > input {
+    display: none;
+}
+
+.rating__container > label {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    color: var(--LightGrey);
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: ease all 0.4s;
+}
+
+.rating__container > label:hover{
+    background-color: var(--Orange);
+}
+
+#submitBtn {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    top: 130px;
+    color: var(--White);
+    border: none;
+    background-color: var(--Orange);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: ease all 0.3s;
+}
+
+#submitBtn:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+/* ThankyouStatePage */
+
+.thankyoustate__page__main__container {
+    display: none;
+    position: relative;
+    height: 500px;    
+    width: 500px;
+    margin: 0 auto;
+    top: 250px;
+    border-radius: 24px;
+    background-color: hsl(215, 23%, 14%)
+}
+
+.thankyouimg__container {
+    position: relative;
+    min-width: 180px;
+    height: 120px;
+    top: 50px;
+    left: 170px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.thankyouimg__container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.selected__numbers__container {
+    position: relative;
+    min-width: 200px;
+    height: 30px;
+    top: 200px;
+    right: 30px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkBlue);
+    border-radius: 15px;
+}
+
+#myLabel {
+    color: var(--Orange);
+}
+
+.thankyou__container {
+    display: grid;
+    position: relative;
+    min-width: 100%;
+    height: 200px;
+    top: 250px;
+    right: 380px;
+    text-align: center;
+    color: var(--White);
+}
+
+.thankyou__container > p {
+    color: var(--MediumGrey);
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+/* Footer */
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1400px) {
+    main{
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .main__container {
+        width: 80% !important;
+        height: 400px !important;
+    }
+    .text__two {
+        width: 80% !important;
+    }
+    .thankyoustate__page__main__container {
+        width: 80%;
+    }
+    .thankyouimg__container {
+        left: 100px;
+    }
+    .selected__numbers__container {
+        right: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    #submitBtn {
+        width: 80%;
+    }
+}
